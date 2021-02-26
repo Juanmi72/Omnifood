@@ -87,7 +87,6 @@ h2::after {
     line-height: 145%;
     width:70%;
     margin-left: 15%;
-
 }
 
 .box p {
@@ -205,4 +204,63 @@ header{
 .main-nav li a:active  {
     border-bottom: 2px solid  #e67e22;
 
+}
+
+/* ----------------------------------------- */
+/*  FEATURES */
+/* ----------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------- */
+/*  MEALS */
+/* ----------------------------------------- */
+
+.section-meals {
+    padding: 0;
+    /* Quitamos todo el padding de la seccion de imagenes*/
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+    /* Quitamos los puntos de la lista y le damos el máximo de ancho*/
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    /* Ponemos las imagenes en bloque y las flotamos horizontalmente
+    dandole un cuarto del espacio a cada una*/
+}
+
+.meal-photo {
+    width: 100%;    
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    /* utilizamos el 100% del espacio del contenedor sin margen, con el
+    overflow hacemos que no se vean mas grandes que el navegador*/ 
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5;
+    /* le damos el 100% del espacio del contenedor con un ancho automatico
+     y lo hacemos un poco opaca y una escala mayor que el normal, 
+     y en la transicion hacia el hover dura 0.5 segundos y aumentamos
+     la opacidad*/
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    /* Con el hover bajamos la escala casi al 100% y eliminamos
+    la opacidad con lo cual le damos efecto de brillantez*/
 }
