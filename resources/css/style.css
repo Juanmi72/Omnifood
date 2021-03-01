@@ -105,6 +105,7 @@ h2::after {
 }
 
 
+
 /* ------ ICONS ------ */
 .icon-big {
     font-size: 350%;
@@ -113,8 +114,36 @@ h2::after {
     text-align: center;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color:#e67e22; 
+    font-size: 120%;
+    margin-right: 10px;
 
+    /* Secretos para alienar texto e iconos*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+}
 
+/* ------ LINKS ------ */
+
+a:link,
+a:visited {
+    color:#e67e22; 
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 
 /* ------ BUTTONS ------ */
 
@@ -159,6 +188,11 @@ h2::after {
 .btn-ghost:active {
     border: 1px solid #cf6d17;    
     color:  #fff;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border:0;
 }
 
 /* ----------------------------------------- */
@@ -322,8 +356,20 @@ header{
 }
 
 .btn-app {
-    height: 50px;
+    height: 500px;
     width: auto;
     margin-right: 10px;
 }
+
+
+/* ----------------------------------------- */
+/*  CITIES */
+/* ----------------------------------------- */
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 
